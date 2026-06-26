@@ -1,0 +1,10 @@
+{
+  "name": "UX writing copilot",
+  "id": "d97113ef-c6a0-4b61-b0c3-c64c0824de4f",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "icon": "icon.svg",
+  "editorType": ["figma"],
+  "relaunchButtons": [{ "command": "d97113ef-c6a0-4b61-b0c3-c64c0824de4f", "name": "UX writing copilot" }]
+}
