@@ -10,6 +10,21 @@ AI-powered UX writing assistant for consistent, data-driven copy — a Figma plu
 - **Contexts** — Define brand voice, tone, vocabulary rules, PRD docs, personas, and writing principles per product
 - **Agents** — Supports Groq, Ollama, OpenRouter, DeepSeek, Mistral, OpenAI, Anthropic, Gemini, Together AI, and custom endpoints
 
+## Files
+
+| File | Description |
+|------|-------------|
+| `manifest.json` | Plugin manifest (name, id, editor type, relaunch buttons) |
+| `code.ts` | Plugin sandbox code — Figma API calls, text layer detection, font loading |
+| `ui.html` | Plugin UI panel — all tabs, AI calls, context/brainstorm/analyze |
+| `icon.svg` | Plugin icon |
+
+> **Note:** `ui.html` is the main UI file (~180KB). To get the full source, pull directly from Figma:
+> ```
+> figma plugin pull d97113ef-c6a0-4b61-b0c3-c64c0824de4f
+> ```
+> This requires the [Figma CLI](https://www.figma.com/developers/api) with appropriate credentials.
+
 ## Setup
 
 1. Open the plugin in Figma
@@ -35,3 +50,7 @@ API keys are **session-only** — they are never stored between sessions. The pl
 | Gemini | Yes | 2.0 Flash, 2.5 Flash |
 | Together AI | Yes | Free credits |
 | Custom | — | Any OpenAI-compatible endpoint |
+
+## Plugin ID
+
+`d97113ef-c6a0-4b61-b0c3-c64c0824de4f`
